@@ -1,0 +1,798 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1">
+
+<script type="text/javascript" >
+    var isInIframe = (window.location != window.parent.location) ? true : false;
+
+    if (isInIframe) {
+        // alert("Window is in iframe");
+        //Do what you want
+        //top.location.href=self.location;
+    }
+    else {
+        //alert("Window is not in iframe");
+        if (document.domain == "172.16.0.21" || document.domain == "localhost" || document.domain == "203.99.54.65")
+        { }
+        else {
+           // window.location = 'http://www.case.edu.pk';
+        }
+    }
+</script>
+
+
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /><title>
+  .:: CASE: Center For Advanced Studies In Engineering ::.
+</title><link href="StyleSheets/Menu.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        body
+        {
+            min-width: 950px;
+            text-align: center;
+        }
+        #wrapper
+        {
+            width: 950px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+        .style1
+        {
+            font-size: xx-large;
+            font-family: Batang;
+            visibility:hidden;
+        }
+    </style>
+</head>
+<body onload="init()">
+    <div id="loading" style="position: fixed; width: 18%; text-align: center; bottom:2px;
+       left:40%; height: 37px; background-color: #144C71; color: #FFFFFF;" 
+        class="style1">
+     Loading...
+    </div>
+
+    <script type="text/javascript">
+        var ld = (document.all);
+
+        var ns4 = document.layers;
+        var ns6 = document.getElementById && !document.all;
+        var ie4 = document.all;
+
+        if (ns4)
+            ld = document.loading;
+        else if (ns6)
+            ld = document.getElementById("loading").style;
+        else if (ie4)
+            ld = document.all.loading.style;
+
+        ld.visibility = "visible";
+        //alert('1');
+        function init() {
+            if (ns4) { ld.visibility = "hidden"; }
+            else if (ns6 || ie4) ld.display = "none";
+        }        
+    </script>
+
+    <script type="text/javascript" src="deploy/js/swfobject.js"></script>
+
+    <form name="aspnetForm" method="post" action="./frmstudentregistration.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="ctl00_ToolkitScriptManager1_HiddenField" id="ctl00_ToolkitScriptManager1_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTY0NDA2NTM5Ng9kFgJmD2QWAgIDD2QWAgIDD2QWEgIBD2QWAmYPZBYEZg8PFgIeBFRleHQFEk11aGFtbWFkIE1hc29vZCA6IGRkAgEPDxYCHwAFCTI0MzAtMDE2MWRkAgMPZBYCZg9kFgJmDw8WBh8ABRNSZWdpc3RyYXRpb24gQ2xvc2VkHglGb3JlQ29sb3IKjQEeBF8hU0ICBGRkAgcPDxYCHgtOYXZpZ2F0ZVVybAVOaHR0cHM6Ly9hZG1pc3Npb25zLmNhc2UuZWR1LnBrL0NNSVMvUmVwb3J0cy9TdW1tYXJ5X1RpbWV0YWJsZS5hc3B4P0RlZ3JlZT1CU0NTZGQCCw8PFgIeB1Zpc2libGVoZBYCAgEPEGRkFgBkAg0PDxYCHwRoZBYCAgEPDxYCHwRoZBYEAgEPDxYCHwAFAk5BZGQCAw8PFgIfAAUCTkFkZAIXD2QWAgIBD2QWCgIBD2QWBAIBDw8WAh8ABQkyNDMwLTAxNjFkZAIDDw8WAh8AZWRkAgIPZBYEAgEPDxYCHwAFTE1vaGFsbGFoIEtoeXJraSwgUG9zdCBPZmZpY2UgS2hhcywgU2lrYW5kZXJhYmFkIEdoYXJiaSwgVGVoc2lsIFNodWphZ2ggQWJhZCxkZAIDDw8WAh8ABQswMzA5NzcwMzAxM2RkAgMPZBYEAgEPDxYCHwAFBk11bHRhbmRkAgMPDxYCHwAFGk1hc29vZG11bmVlcjIwMDVAZ21haWwuY29tZGQCBA9kFgQCAQ8PFgIfAAUOTm90IEFwcGxpY2FibGVkZAIDDw8WAh8ABQdTcC0yMDI1ZGQCBQ9kFgICAQ8PFgIfAAUEQlNDU2RkAh0PZBYCAgEPZBYOAgEPZBYCAgEPDxYCHwAFAzEuOGRkAgIPZBYCAgEPDxYCHwAFCVdhcm5pbmctMWRkAgMPZBYCAgEPDxYCHwAFCEVucm9sbGVkZGQCBA9kFgICAQ8PFgIfAAUER29vZGRkAgUPZBYCAgEPDxYCHwAFDk5vdCBBcHBsaWNhYmxlZGQCBg9kFgRmDw8WAh8ABWxDdXJyZW50IE5vIG9mIEhvbGRzICggPGEgaHJlZj0iZnJtU3R1ZGVudEhvbGRzLmFzcHg/YWxwaGE9c01vaERPNGlUWkU9IiAgY2xhc3M9InR4dGxpbmsiPlZpZXcgRGV0YWlscyA8L2E+IClkZAIBDw8WCB8ABQEwHglCYWNrQ29sb3IKTx8BCqQBHwICDGRkAgcPZBYEZg8PFgIfAAVzQ3VycmVudCBGaW5lcyB0byBiZSBQYWlkICggPGEgaHJlZj0iZnJtU3R1ZGVudEZpbmUuYXNweD9hbHBoYT1zTW9oRE80aVRaRT0iICAgICBjbGFzcz0idHh0bGluayI+VmlldyBEZXRhaWxzIDwvYT4gKWRkAgEPDxYIHwAFATAfBQpPHwEKpAEfAgIMZGQCJQ9kFgICAw8PFgYfAQpPHwAFFFRvdGFsIE91dHN0YW5kaW5nOiAwHwICBGRkAikPZBYCAgEPZBYEAgEPDxYCHwAFKENoYWxsYW5zIG9mIFN1LTIwMjUgYW5kIFNwLTIwMjUgU2VtZXN0ZXJkZAIDDzwrABEDAA8WBB4LXyFEYXRhQm91bmRnHgtfIUl0ZW1Db3VudAIEZAEQFgAWABYADBQrAAAWAmYPZBYKAgEPZBYQZg8PFgIfAAUKU3AyNS8wMjg1MWRkAgEPDxYCHwAFDFJlZ2lzdHJhdGlvbmRkAgIPDxYCHwAFBFBhaWRkZAIDDw8WAh8ABQYxMTc1MDBkZAIEDw8WAh8ABQEwZGQCBQ8PFgIfAAUFNTg3NTBkZAIGDw8WAh8ABQkyMCBGZWIgMjVkZAIHDw8WAh8ABQkyNSBGZWIgMjVkZAICD2QWEGYPDxYCHwAFClNwMjUvMDI5MDVkZAIBDw8WAh8ABQ9JbnN0YWxsbWVudCAtIDFkZAICDw8WAh8ABQRQYWlkZGQCAw8PFgIfAAUGMTE3NTAwZGQCBA8PFgIfAAUBMGRkAgUPDxYCHwAFBTI5Mzc1ZGQCBg8PFgIfAAUJMjEgRmViIDI1ZGQCBw8PFgIfAAUJMjUgQXByIDI1ZGQCAw9kFhBmDw8WAh8ABQpTcDI1LzAyOTA2ZGQCAQ8PFgIfAAUPSW5zdGFsbG1lbnQgLSAyZGQCAg8PFgIfAAUEUGFpZGRkAgMPDxYCHwAFBjExNzUwMGRkAgQPDxYCHwAFBTI0MDAwZGQCBQ8PFgIfAAUENTM3NWRkAgYPDxYCHwAFCTIxIEZlYiAyNWRkAgcPDxYCHwAFCTA1IEp1biAyNWRkAgQPZBYQZg8PFgIfAAUKU3AyNS8wMzg2MmRkAgEPDxYCHwAFBlJlYmF0ZWRkAgIPDxYCHwAFCUNhbmNlbGxlZGRkAgMPDxYCHwAFBi0yNDAwMGRkAgQPDxYCHwAFBTI0MDAwZGQCBQ8PFgIfAAUGLTI0MDAwZGQCBg8PFgIfAAUJMjYgTWFyIDI1ZGQCBw8PFgIfAAUJMjUgQXByIDI1ZGQCBQ8PFgIfBGhkZBgCBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WBgUgY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRJbWFnZTEFJmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkSW1hZ2VCdXR0b24xBSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJEltYWdlQnV0dG9uMgUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRJbWFnZUJ1dHRvbjMFJmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkY3RsMDEkSW1hZ2UxBSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGN0bDAyJEltYWdlMQU4Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRDdHJsQ2hhbGxhbnMkR3ZTdHVkZW50Q2hhbGxhbnMPPCsADAEIAgFkOGjxgFb6SLmQUrM4p/SBwfWVXJQS2R3DS/HFtduUFo8=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+<script src="/CMIS/WebResource.axd?d=ZOjX1RRqTlpPlQP1vmaEZmcvLzGpzHNXY1wg3ZCRUzrJoaoGt8ALusWZ6tmAaeNUfRSMZ48xDJnGes7XebnApLPTzmyUOuMfhoB8E12bWLk1&amp;t=637100542300000000" type="text/javascript"></script>
+
+<script src="/CMIS/ScriptResource.axd?d=SbiNJBo85Dpykheon8eQgDK63PBAD3ZO-cBUAmTehaFjv3ZGevREqZbDuhW_d5anfkAFfd3n8kWMi3X9rck6lEjz1OmmwvDNoO75pU5XuHzNGgRGA7PjKVftotfsXiJKBp5Gm3BK1wMQZM7ep4lHjg2&amp;t=2939b118" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/CMIS/ScriptResource.axd?d=jzMlCPMzDUIj2TbnmHFUhj7si1CpI4tYBA9SrXc_0xHNbVh1cnz8oX-r_DjNB80Cce29NWupk_9hn54xpxKqe1i1Y62bnEl69wmgomjoH9PeQpczmpsKGL1ewT9SIlOsHvK26sEu406iZoD2-jaoNw2&amp;t=2939b118" type="text/javascript"></script>
+<script src="/CMIS/FORMS/SECUREFORMS/frmstudentregistration.aspx?_TSM_HiddenField_=ctl00_ToolkitScriptManager1_HiddenField&amp;_TSM_CombinedScripts_=%3b%3bAjaxControlToolkit%2c+Version%3d3.5.60501.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3aen-US%3a61715ba4-0922-4e75-a2be-d80670612837%3ade1feab2%3af2c8e708%3a720a52bf%3af9cec9bc%3a4a2c8239" type="text/javascript"></script>
+<div>
+
+  <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B83981CC" />
+  <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAA/7z51A2Yu7hBeb07RtsXH+h6aSzKKXN7c6qf1fG1Dk+kxSRa1QaBtGJFrP3j7+JDilYcZ5F4y5CusX3BAgDGEy48oT0GbeuZyRMHbZKVNFkHqkZiErJHveOqXDMglhd0KsSwftJIgYW6xlYeONYYGkyqAKiYB5JE7TIPR+06UZAFI20GA0L7UpVZf8WbyLJ13RqJ7lES49e0yj9/Rix/l4eQF8rNzw5Six5paOHangSbarUJU+kS6s7Nr9G5Yh/lhG+yVGPkfhkhIZMgtqbeM6jiXfYFovidcIgJ4nOLtNDEbG6Ps+ffwOLnXCPiOjJDKtuAWjINt2Dw2xFciAC/JXW23EALKz/VXD5L8BsRE6pQ==" />
+</div>
+    <div id="Div1">
+        <table width="960px" align="center" cellpadding="0" cellspacing="0">
+            <tr style="height: 10px">
+                <td colspan="2">
+                    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ToolkitScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td width="20%">
+                    <img id="ctl00_Image1" src="Images/CASE-logo.png?id=2" style="border-width:0px;" />
+                </td>
+                <td width="80%" valign="middle">
+                    <table width="100%" class="HeadingChildPage" id="events">
+                        <tr>
+                            <td align="right" valign="middle">
+                                <span style="font-size: 14pt"><span style="font-family: Courier New"> Sir Syed CASE Institute of Technology</span><br />
+                                </span>Student Portal
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr style="height: 10px">
+                <td colspan="2" align="right">
+                    <div id="ctl00_NavMenu">
+  
+                        <table class="textSmall" width="100%">
+                            <tr align="right">
+                                <td>
+                                    <a id="ctl00_HyperLinkHomePage" class="txtlink" href="frmStudentRegistration.aspx"><b>Back to Home Page</b></a>
+                                    &nbsp;| <a href="frmChangePassword.aspx" class="txtlink"><b>Change Password</b></a>
+                                    |
+                                    <a id="ctl00_LinkButtonSignOut" class="txtlink" href="javascript:__doPostBack(&#39;ctl00$LinkButtonSignOut&#39;,&#39;&#39;)"><b>Sign Out</b></a>
+                                </td>
+                            </tr>
+                        </table>
+                    
+</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="background-image: url('../../IMAGES/bar.jpg'); background-color: #003E81;
+        width: 100%; height: 15px;" align="center">
+        <table>
+            <tr>
+                <td style="width: 960px">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="background-color: Yellow; width: 100%; height: 3px;" align="center">
+    </div>
+    <div id="Div2">
+    </div>
+    
+   
+   
+    <div id="wrapper">
+        <table width="960" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <td colspan="3">
+                    <table>
+                        <tr>
+                            <td align="center" valign="top">
+                            </td>
+                            <td style="width: 960px" valign="top">
+                                <div style="text-align: center">
+                                    
+    <table class="textSmall" bordercolor="#666666" cellspacing="0" cellpadding="3" bgcolor="#ffffff"
+        border="3">
+        <tr>
+            <td colspan="2">
+                
+                <div align="center">
+                    <table id="ctl00_ContentPlaceHolder1_tblWelcomeInfo" class="HeadingChildPage" align="Center" border="0" style="font-size:Large;font-weight:bold;width:100%;">
+  <tr>
+    <td align="right" valign="middle" style="font-weight:bold;">Muhammad Masood : </td><td align="left" valign="middle" style="font-weight:bold;">2430-0161</td>
+  </tr>
+</table>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left" width="30%">
+                <table class="textSmall" bordercolor="#666666" cellspacing="0" cellpadding="3" border="1">
+                    <tr>
+                        <td>
+                            <font class="HeadingChildPage">Services:</font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table id="ctl00_ContentPlaceHolder1_tblServices" class="textSmall" cellspacing="0" cellpadding="3" rules="all" border="1" style="border-color:Gray;border-width:1px;border-style:None;border-collapse:collapse;">
+  <tr>
+    <td style="color:Red;">Registration Closed</td><td>Request for Personal Information Update</td>
+  </tr>
+</table>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="HeadingChildPage">
+                            Announcements
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            No Announcements
+                        </td>
+                       
+                    </tr>
+                   
+                    <tr>
+                        <td valign="middle">
+                            <a id="ctl00_ContentPlaceHolder1_hyplTimeTable" class="txtlink" href="https://admissions.case.edu.pk/CMIS/Reports/Summary_Timetable.aspx?Degree=BSCS" target="_blank" style="font-size:10pt; font-weight:bold">TIME TABLE</a> 
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+            <td width="70%">
+                <table class="textSmall">
+                <tr>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table width="100%">
+                            <tr>
+                                <td width="90%" class="HeadingChildPage">
+                                Learning Management System</td>
+                               
+                                <td width="10%" rowspan="3"><img src="../../IMAGES/Moodle.png?id=2" /></td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <br />
+                                    <a href="http://admissions.case.edu.pk/CMIS/LMS.aspx" id="ctl00_ContentPlaceHolder1_A2" class="txtlink" target="_blank" style="font-size:10pt;"><b>Click here for LMS Web Application</b></a>
+                                    <br /><br />
+                                    <a href="https://www.case.edu.pk/LMS_Android.aspx" id="ctl00_ContentPlaceHolder1_A3" class="txtlink" target="_blank" style="font-size:10pt;"><b>Click here for LMS Android Application</b></a>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="textSmall" style="color:Red"><br />
+                                <b>Note:</b> Enter your Student Portal Credentials for Learning Management System (LMS)
+                                </td>
+                            </tr>
+                        </table>
+                        <hr />
+                    </td>
+                </tr>
+                <tr><td>&nbsp;</td></tr>
+                    <tr>
+                        <td style="height: 18px">
+                            <div id="ctl00_ContentPlaceHolder1_pnlExpandPersonalInformation" class="collapsePanelHeader" style="height:30px;">
+  
+                                <div style="padding: 5px; cursor: pointer; vertical-align: middle;">
+                                    <div style="float: left;">
+                                        <span class="HeadingChildPage">Personal Information</span></div>
+                                    <div style="float: left; margin-left: 20px;">
+                                        <span id="ctl00_ContentPlaceHolder1_Label1">(Show Details...)</span>
+                                    </div>
+                                    <div style="float: right; vertical-align: middle;">
+                                        <input type="image" name="ctl00$ContentPlaceHolder1$Image1" id="ctl00_ContentPlaceHolder1_Image1" src="../../images/expand_blue.jpg" alt="(Show Details...)" style="border-width:0px;" />
+                                    </div>
+                                </div>
+                            
+</div>
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$pnlpnlPersonalInformation_CollapsiblePanelExtender_ClientState" id="ctl00_ContentPlaceHolder1_pnlpnlPersonalInformation_CollapsiblePanelExtender_ClientState" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height: 18px">
+                            <div id="ctl00_ContentPlaceHolder1_pnlPersonalInformation">
+  
+                                <table id="ctl00_ContentPlaceHolder1_tblPersonalInfo" class="textSmall" cellspacing="0" cellpadding="3" rules="all" border="1" style="border-color:#003E81;border-width:1px;border-style:solid;width:100%;border-collapse:collapse;">
+    <tr style="background-color:#003E81;height:3px;">
+      <td colspan="4"></td>
+    </tr><tr>
+      <td style="font-weight:bold;">Registration #:</td><td>2430-0161</td><td style="font-weight:bold;">Phone No:</td><td></td>
+    </tr><tr>
+      <td style="font-weight:bold;">Current Address:</td><td>Mohallah Khyrki, Post Office Khas, Sikanderabad Gharbi, Tehsil Shujagh Abad,</td><td style="font-weight:bold;">Mobile No:</td><td>03097703013</td>
+    </tr><tr>
+      <td style="font-weight:bold;">City:</td><td>Multan</td><td style="font-weight:bold;">Email:</td><td>Masoodmuneer2005@gmail.com</td>
+    </tr><tr>
+      <td style="font-weight:bold;">Agency:</td><td>Not Applicable</td><td style="font-weight:bold;">Joining Session:</td><td>Sp-2025</td>
+    </tr><tr>
+      <td style="font-weight:bold;">Degree:</td><td>BSCS</td><td style="font-weight:bold;"></td><td></td>
+    </tr>
+  </table>
+                            
+</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height: 18px">
+                            <div id="ctl00_ContentPlaceHolder1_pnlExpandFinancialInformation" class="collapsePanelHeader" style="height:30px;">
+  
+                                <div style="padding: 5px; cursor: pointer; vertical-align: middle;">
+                                    <div style="float: left;">
+                                        <span class="HeadingChildPage">Academic/Financial Information (Overall)</span></div>
+                                    <div style="float: left; margin-left: 20px;">
+                                        <span id="ctl00_ContentPlaceHolder1_Label2">(Show Details...)</span>
+                                    </div>
+                                    <div style="float: right; vertical-align: middle;">
+                                        <input type="image" name="ctl00$ContentPlaceHolder1$ImageButton1" id="ctl00_ContentPlaceHolder1_ImageButton1" src="../../images/expand_blue.jpg" alt="(Show Details...)" style="border-width:0px;" />
+                                    </div>
+                                </div>
+                            
+</div>
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$CollapsiblePanelExtender_pnlExpandFinancialInformation_ClientState" id="ctl00_ContentPlaceHolder1_CollapsiblePanelExtender_pnlExpandFinancialInformation_ClientState" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="HeadingChildPage" style="height: 30px" valign="bottom">
+                            <div id="ctl00_ContentPlaceHolder1_pnlFinancialInformation">
+  
+                                <table id="ctl00_ContentPlaceHolder1_tblAcademicInfo" class="textSmall" cellspacing="0" cellpadding="3" rules="all" border="1" style="border-color:#003E81;border-width:1px;border-style:solid;width:100%;border-collapse:collapse;">
+    <tr style="background-color:#003E81;height:3px;">
+      <td colspan="2"></td>
+    </tr><tr>
+      <td style="font-weight:bold;">Your Degree Cummulative GPA</td><td>1.8</td>
+    </tr><tr>
+      <td style="font-weight:bold;">Your Overall Academic Standing</td><td>Warning-1</td>
+    </tr><tr>
+      <td style="font-weight:bold;">Academic Status</td><td>Enrolled</td>
+    </tr><tr>
+      <td style="font-weight:bold;">Financial Status</td><td>Good</td>
+    </tr><tr>
+      <td style="font-weight:bold;">On Time Installment Status</td><td>Not Applicable</td>
+    </tr><tr>
+      <td style="font-weight:bold;">Current No of Holds ( <a href="frmStudentHolds.aspx?alpha=sMohDO4iTZE="  class="txtlink">View Details </a> )</td><td style="color:White;background-color:Green;">0</td>
+    </tr><tr>
+      <td style="font-weight:bold;">Current Fines to be Paid ( <a href="frmStudentFine.aspx?alpha=sMohDO4iTZE="     class="txtlink">View Details </a> )</td><td style="color:White;background-color:Green;">0</td>
+    </tr>
+  </table>
+                            
+</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height: 18px">
+                            <div id="ctl00_ContentPlaceHolder1_pnlExpandTransferedCources" class="collapsePanelHeader" style="height:30px;">
+  
+                                <div style="padding: 5px; cursor: pointer; vertical-align: middle;">
+                                    <div style="float: left;">
+                                        <span class="HeadingChildPage">Exempted Courses</span></div>
+                                    <div style="float: left; margin-left: 20px;">
+                                        <span id="ctl00_ContentPlaceHolder1_Label3">(Show Details...)</span>
+                                    </div>
+                                    <div style="float: right; vertical-align: middle;">
+                                        <input type="image" name="ctl00$ContentPlaceHolder1$ImageButton2" id="ctl00_ContentPlaceHolder1_ImageButton2" src="../../images/expand_blue.jpg" alt="(Show Details...)" style="border-width:0px;" />
+                                    </div>
+                                </div>
+                            
+</div>
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$CollapsiblePanelExtender1_pnlTransferedCources_ClientState" id="ctl00_ContentPlaceHolder1_CollapsiblePanelExtender1_pnlTransferedCources_ClientState" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="ctl00_ContentPlaceHolder1_pnlTransferedCources">
+  
+                                <table id="ctl00_ContentPlaceHolder1_tblTransferredCourses" class="textSmall" cellspacing="0" cellpadding="3" rules="all" border="1" style="border-color:#003E81;border-width:1px;border-style:solid;width:100%;border-collapse:collapse;">
+    <tr style="background-color:#003E81;height:3px;">
+      <td colspan="4"></td>
+    </tr><tr>
+      <td style="font-weight:bold;">Course Id</td><td style="font-weight:bold;">Course Name</td><td style="font-weight:bold;">Transfer From</td><td style="font-weight:bold;">Grade</td>
+    </tr><tr>
+      <td colspan="4">No Data found.</td>
+    </tr>
+  </table>
+                            
+</div>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td style="height: 18px">
+                            <div id="ctl00_ContentPlaceHolder1_pnlExpandChallans" class="collapsePanelHeader" style="height:30px;">
+  
+                                <div style="padding: 5px; cursor: pointer; vertical-align: middle;">
+                                    <div style="float: left;">
+                                        <span class="HeadingChildPage">Challan Information</span></div>
+                                    <div style="float: left; margin-left: 20px;">
+                                        <span id="ctl00_ContentPlaceHolder1_Label4">(Show Details...)</span>
+                                    </div>
+                                    <div style="float: left; margin-left: 100px;">
+                                        <span id="ctl00_ContentPlaceHolder1_lblTotalOutstanding" style="color:Green;font-weight:bold;">Total Outstanding: 0</span>
+                                    </div>
+                                    <div style="float: right; vertical-align: middle;">
+                                        <input type="image" name="ctl00$ContentPlaceHolder1$ImageButton3" id="ctl00_ContentPlaceHolder1_ImageButton3" src="../../images/expand_blue.jpg" alt="(Show Details...)" style="border-width:0px;" />
+                                    </div>
+                                </div>
+                            
+</div>
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$CollapsiblePanelExtender1_pnlChallans_ClientState" id="ctl00_ContentPlaceHolder1_CollapsiblePanelExtender1_pnlChallans_ClientState" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="ctl00_ContentPlaceHolder1_pnlChallans">
+  
+                                
+<table Width="100%">
+    <tr>
+        <td>
+            <span id="ctl00_ContentPlaceHolder1_CtrlChallans_lbSemester" class="HeadingChildPage">Challans of Su-2025 and Sp-2025 Semester</span>    
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div>
+    <table cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_CtrlChallans_GvStudentChallans" style="border-color:Black;width:100%;border-collapse:collapse;">
+      <tr style="color:White;background-color:#003E81;border-style:Groove;">
+        <th scope="col">Challan No</th><th scope="col">Challan Type</th><th scope="col">Status</th><th scope="col">Gross Payable</th><th scope="col">Scholarship</th><th scope="col">Paid Now</th><th scope="col">Issue Date</th><th scope="col">Due Date</th><th scope="col">Print</th>
+      </tr><tr>
+        <td>Sp25/02851</td><td>Registration</td><td>Paid</td><td>117500</td><td>0</td><td>58750</td><td>20 Feb 25</td><td>25 Feb 25</td><td></td>
+      </tr><tr style="background-color:LightSteelBlue;">
+        <td>Sp25/02905</td><td>Installment - 1</td><td>Paid</td><td>117500</td><td>0</td><td>29375</td><td>21 Feb 25</td><td>25 Apr 25</td><td></td>
+      </tr><tr>
+        <td>Sp25/02906</td><td>Installment - 2</td><td>Paid</td><td>117500</td><td>24000</td><td>5375</td><td>21 Feb 25</td><td>05 Jun 25</td><td></td>
+      </tr><tr style="background-color:LightSteelBlue;">
+        <td>Sp25/03862</td><td>Rebate</td><td>Cancelled</td><td>-24000</td><td>24000</td><td>-24000</td><td>26 Mar 25</td><td>25 Apr 25</td><td></td>
+      </tr>
+    </table>
+  </div>    
+        </td>
+    </tr>
+    
+ 
+ </table>
+                            
+</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height: 18px">
+                            &nbsp;</td>
+                    </tr>
+                  <tr>
+                  <td>
+                  <span class="HeadingChildPage">Academic/Financial Information (Records Per Semester)</span></div>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td>
+                  <b>Provisional Result<br /><br />
+                    </b>
+                  </td>
+                  </tr>
+                    <tr>
+                        <td>
+                            <div id="ctl00_ContentPlaceHolder1_pnlAcademicInformation">
+  
+                                <table id="ctl00_ContentPlaceHolder1_tblSemesterInfo" class="textSmall" cellspacing="0" cellpadding="3" rules="all" border="1" style="border-color:#003E81;border-width:1px;border-style:solid;border-collapse:collapse;">
+
+  </table>
+                            
+<style type="text/css">
+    .collapsePanelHeader
+    {
+        width: 100%;
+        font-weight: bold;
+    }
+    .HeadingChildPage
+    {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        color: #002965;
+        font-weight: 700;
+    }
+    .textSmall
+    {
+        font: 11px verdana,Arial,Helvetica,sans-serif; /*color:#0A274A;*/
+        color: #595959;
+        text-align: justify;
+    }
+</style>
+<div id="ctl00_ContentPlaceHolder1_ctl01_pnlExpandPersonalInformation" class="collapsePanelHeader" style="height:30px;">
+    
+    <div style="padding: 5px; cursor: pointer; vertical-align: middle;">
+        <div style="float: left;">
+            <span id="ctl00_ContentPlaceHolder1_ctl01_lblTitle">Sp-2025</span>
+        </div>
+        <div style="float: left; margin-left: 20px;">
+            <span id="ctl00_ContentPlaceHolder1_ctl01_Label1">(Show Details...)</span>
+        </div>
+        <div style="float: right; vertical-align: middle;">
+            <input type="image" name="ctl00$ContentPlaceHolder1$ctl01$Image1" id="ctl00_ContentPlaceHolder1_ctl01_Image1" src="../../images/expand_blue.jpg" alt="(Show Details...)" style="border-width:0px;" />
+        </div>
+    </div>
+
+  </div>
+<div id="ctl00_ContentPlaceHolder1_ctl01_pnlPersonalInformation">
+    
+  
+<span><table id="ctl00_ContentPlaceHolder1_tblSemesterInfo" class="textSmall" cellspacing="0" cellpadding="3" rules="all" border="1" style="border-color:#003E81;border-width:1px;border-style:solid;border-collapse:collapse;">
+  <tr>
+    <td colspan="6" style="background-color:#003E81;height:3px;"></td>
+  </tr><tr>
+    <td colspan="2" style="font-weight:bold;">Semester Session</td><td class="SubHeadingSemester" align="center" colspan="4" style="color:Navy;font-weight:normal;"><b>Sp-2025</b></td>
+  </tr><tr>
+    <td colspan="2" style="font-weight:bold;">Course Id</td><td colspan="2" style="font-weight:bold;">Course Name</td><td colspan="2" style="font-weight:bold;">Grade</td>
+  </tr><tr>
+    <td colspan="2">MT 1102&nbsp; </td><td colspan="2">Calculus and Analytic Geometry</td><td colspan="2">B+</td>
+  </tr><tr>
+    <td colspan="2">CS 2201&nbsp; </td><td colspan="2">Database Systems</td><td colspan="2">B</td>
+  </tr><tr>
+    <td colspan="2">CS 1201&nbsp; </td><td colspan="2">Digital Logic Design</td><td colspan="2">B-</td>
+  </tr><tr>
+    <td colspan="2">CS 2004&nbsp; </td><td colspan="2">Object Oriented Programming</td><td colspan="2">C-</td>
+  </tr><tr>
+    <td colspan="2">SE 2101&nbsp; </td><td colspan="2">Software Engineering</td><td colspan="2">B+</td>
+  </tr><tr>
+    <td colspan="2" style="font-weight:bold;">Semester GPA</td><td colspan="2" style="font-weight:bold;">Semester CGPA</td><td colspan="2" style="font-weight:bold;">Semester Academic Standing</td>
+  </tr><tr>
+    <td colspan="2">3.37</td><td colspan="2">3.41</td><td colspan="2"></td>
+  </tr><tr>
+    <td colspan="2" style="font-weight:bold;">Fee</td><td colspan="2" style="font-weight:bold;">Fee Paid</td><td colspan="2" style="font-weight:bold;">Fee Remaining</td>
+  </tr><tr>
+    <td colspan="2">110500.00</td><td colspan="2">93500.00</td><td colspan="2">-5000.00</td>
+  </tr><tr>
+    <td colspan="2" style="font-weight:bold;">Additional Fee</td><td colspan="2" style="font-weight:bold;">Rebate/Concession</td><td colspan="2" style="font-weight:bold;">Payments</td>
+  </tr><tr>
+    <td colspan="2">2000.00</td><td colspan="2">24000.00</td>
+  </tr><tr>
+    <td colspan="2" style="font-weight:bold;">Comments Additional Fee</td><td colspan="2" style="font-weight:bold;">Comments Rebate/Concession</td><td colspan="2" style="font-weight:bold;">Comments Payment</td>
+  </tr><tr>
+    <td colspan="2">||Installment Charges</td><td colspan="2">||Need Based scholarship</td><td colspan="2"></td>
+  </tr><tr>
+    <td colspan="6" style="background-color:White;height:6px;"></td>
+  </tr><tr>
+    <td colspan="6" style="background-color:Navy;height:2px;"></td>
+  </tr><tr>
+    <td colspan="6" style="background-color:White;height:6px;"></td>
+  </tr>
+</table></span>
+  </div>
+<input type="hidden" name="ctl00$ContentPlaceHolder1$ctl01$pnlpnlPersonalInformation_CollapsiblePanelExtender_ClientState" id="ctl00_ContentPlaceHolder1_ctl01_pnlpnlPersonalInformation_CollapsiblePanelExtender_ClientState" />
+
+<style type="text/css">
+    .collapsePanelHeader
+    {
+        width: 100%;
+        font-weight: bold;
+    }
+    .HeadingChildPage
+    {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        color: #002965;
+        font-weight: 700;
+    }
+    .textSmall
+    {
+        font: 11px verdana,Arial,Helvetica,sans-serif; /*color:#0A274A;*/
+        color: #595959;
+        text-align: justify;
+    }
+</style>
+<div id="ctl00_ContentPlaceHolder1_ctl02_pnlExpandPersonalInformation" class="collapsePanelHeader" style="height:30px;">
+    
+    <div style="padding: 5px; cursor: pointer; vertical-align: middle;">
+        <div style="float: left;">
+            <span id="ctl00_ContentPlaceHolder1_ctl02_lblTitle">Fa-2024</span>
+        </div>
+        <div style="float: left; margin-left: 20px;">
+            <span id="ctl00_ContentPlaceHolder1_ctl02_Label1">(Show Details...)</span>
+        </div>
+        <div style="float: right; vertical-align: middle;">
+            <input type="image" name="ctl00$ContentPlaceHolder1$ctl02$Image1" id="ctl00_ContentPlaceHolder1_ctl02_Image1" src="../../images/expand_blue.jpg" alt="(Show Details...)" style="border-width:0px;" />
+        </div>
+    </div>
+
+  </div>
+<div id="ctl00_ContentPlaceHolder1_ctl02_pnlPersonalInformation">
+    
+  
+<span><table id="ctl00_ContentPlaceHolder1_tblSemesterInfo" class="textSmall" cellspacing="0" cellpadding="3" rules="all" border="1" style="border-color:#003E81;border-width:1px;border-style:solid;border-collapse:collapse;">
+  <tr>
+    <td colspan="2" style="font-weight:bold;">Semester Session</td><td class="SubHeadingSemester" align="center" colspan="4" style="color:Navy;font-weight:normal;"><b>Fa-2024</b></td>
+  </tr><tr>
+    <td colspan="2" style="font-weight:bold;">Course Id</td><td colspan="2" style="font-weight:bold;">Course Name</td><td colspan="2" style="font-weight:bold;">Grade</td>
+  </tr><tr>
+    <td colspan="2">CS 1101&nbsp; </td><td colspan="2">Application of ICT</td><td colspan="2">C</td>
+  </tr><tr>
+    <td colspan="2">CS 1102&nbsp; </td><td colspan="2">Programming Fundamentals</td><td colspan="2">D+</td>
+  </tr><tr>
+    <td colspan="2">EN 1101&nbsp; </td><td colspan="2">Functional English</td><td colspan="2">B-</td>
+  </tr><tr>
+    <td colspan="2">HU 1101&nbsp; </td><td colspan="2">Islamic Studies/Ethics</td><td colspan="2">C+</td>
+  </tr><tr>
+    <td colspan="2">MT 1103&nbsp; </td><td colspan="2">Discrete Structures</td><td colspan="2">B-</td>
+  </tr><tr>
+    <td colspan="2" style="font-weight:bold;">Semester GPA</td><td colspan="2" style="font-weight:bold;">Semester CGPA</td><td colspan="2" style="font-weight:bold;">Semester Academic Standing</td>
+  </tr><tr>
+    <td colspan="2">3.07</td><td colspan="2"></td>3.07<td colspan="2">Satisfactory</td>
+  </tr><tr>
+    <td colspan="2" style="font-weight:bold;">Fee</td><td colspan="2" style="font-weight:bold;">Fee Paid</td><td colspan="2" style="font-weight:bold;">Fee Remaining</td>
+  </tr><tr>
+    <td colspan="2">108000.00</td><td colspan="2">136000.00</td><td colspan="2">5000.00</td>
+  </tr><tr>
+    <td colspan="2" style="font-weight:bold;">Additional Fee</td><td colspan="2" style="font-weight:bold;">Rebate/Concession</td><td colspan="2" style="font-weight:bold;">Payments</td>
+  </tr><tr>
+    <td colspan="2">33000.00</td><td colspan="2">0.00</td>
+  </tr><tr>
+    <td colspan="2" style="font-weight:bold;">Comments Additional Fee</td><td colspan="2" style="font-weight:bold;">Comments Rebate/Concession</td><td colspan="2" style="font-weight:bold;">Comments Payment</td>
+  </tr><tr>
+    <td colspan="2">Admission and Security fee||Short Attendance-Short Attendance CS 1101</td><td colspan="2"></td><td colspan="2"></td>
+  </tr><tr>
+    <td colspan="6" style="background-color:White;height:6px;"></td>
+  </tr><tr>
+    <td colspan="6" style="background-color:Navy;height:2px;"></td>
+  </tr><tr>
+    <td colspan="6" style="background-color:White;height:6px;"></td>
+  </tr>
+</table></span>
+  </div>
+<input type="hidden" name="ctl00$ContentPlaceHolder1$ctl02$pnlpnlPersonalInformation_CollapsiblePanelExtender_ClientState" id="ctl00_ContentPlaceHolder1_ctl02_pnlpnlPersonalInformation_CollapsiblePanelExtender_ClientState" />
+
+</div>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td align="center">
+                            <span style="color: red">Note:- Every information related to finance is provisional.
+                                For confirm information, please consult SS-CASE-IT Account`s department.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                &nbsp;</p>
+                        </td>
+                    </tr>
+                </table>
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hfStdRollNo" id="ctl00_ContentPlaceHolder1_hfStdRollNo" value="Fa-2024/BSCS/049" />
+            </td>
+        </tr>
+    </table>
+
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="width: 100%; height: 15px;" align="center">
+        <table>
+            <tr>
+                <td style="width: 960px">
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <div style="background-color: Yellow; width: 100%; height: 3px;" align="center">
+    </div>
+    
+    <table width="100%">
+        <tr height="45px">
+            <td width="100%" align="center" valign="middle" style="background-image: url('../../IMAGES/Footer.png');
+                background-color: #003E81; font-family: verdana,arial,sans-serif; font-size: smaller;
+                color: White;">
+                ©
+                2025
+                Sir Syed CASE Institute of Technology, Islamabad.
+            </td>
+        </tr>
+    </table>
+    <div style="background-color: Yellow; width: 100%; height: 4px;" align="center">
+    </div>
+
+    <script language="javascript" type="text/javascript">
+        /*-Ajmal Shahzad*/
+        var IsHandlerReg = false;
+        if (IsHandlerReg == false) {
+            Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(BeginRequestHandler);
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+            IsHandlerReg = true;
+        }
+
+        function BeginRequestHandler(sender, args) {
+            var elem = args.get_postBackElement();
+            var oControl = args.get_postBackElement();
+            oControl.disabled = true;
+            oControl.value = 'Wait...';
+            // ActivateProcessingDiv('visible', 'ProcessingDiv1', 'Processing...');
+            ActivateProcessingDiv('visible', 'ProcessingDiv2', 'Processing...');
+        }
+        function EndRequestHandler(sender, args) {
+            //  ActivateProcessingDiv('hidden', 'ProcessingDiv1', '');
+            ActivateProcessingDiv('hidden', 'ProcessingDiv2', '');
+        }
+        function ActivateProcessingDiv(visstring, elem, msg) {
+            var adiv = $get(elem);
+            if (visstring == 'visible') {
+                adiv.style.visibility = visstring;
+            }
+            else {
+                adiv.style.visibility = visstring;
+            }
+
+            //adiv.innerHTML = msg;        opacity: 0.7;filter: alpha(opacity=70); -moz-opacity: 0.7; -khtml-opacity: 0.7;        
+        }
+    </script>
+
+    
+    <div id="ProcessingDiv2" style="visibility: hidden; border: 0px  #808080; position: fixed;
+        bottom: 0px; left: 40%; font-family: Constantia; font-size: 30px; font-weight: bold;
+        font-style: normal; color: #000000; background-color: White; filter: alpha(opacity=100);
+        -moz-opacity: 1; -khtml-opacity: 1 opacity: 1;">
+        <img src="../../IMAGES/pleasewait.gif" /></br>
+    </div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("ctl00_ToolkitScriptManager1_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"ctl00_ContentPlaceHolder1_pnlpnlPersonalInformation_CollapsiblePanelExtender_ClientState","CollapseControlID":"ctl00_ContentPlaceHolder1_pnlExpandPersonalInformation","CollapsedImage":"../../images/expand_blue.jpg","CollapsedText":"(Show Details...)","ExpandControlID":"ctl00_ContentPlaceHolder1_pnlExpandPersonalInformation","ExpandedImage":"../../images/collapse_blue.jpg","ExpandedText":"(Hide Details...)","ImageControlID":"ctl00_ContentPlaceHolder1_Image1","SuppressPostBack":true,"TextLabelID":"ctl00_ContentPlaceHolder1_Label1","id":"ctl00_ContentPlaceHolder1_pnlpnlPersonalInformation_CollapsiblePanelExtender"}, null, null, $get("ctl00_ContentPlaceHolder1_pnlPersonalInformation"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"ctl00_ContentPlaceHolder1_CollapsiblePanelExtender_pnlExpandFinancialInformation_ClientState","CollapseControlID":"ctl00_ContentPlaceHolder1_pnlExpandFinancialInformation","CollapsedImage":"../../images/expand_blue.jpg","CollapsedText":"(Show Details...)","ExpandControlID":"ctl00_ContentPlaceHolder1_pnlExpandFinancialInformation","ExpandedImage":"../../images/collapse_blue.jpg","ExpandedText":"(Hide Details...)","ImageControlID":"ctl00_ContentPlaceHolder1_ImageButton1","SuppressPostBack":true,"TextLabelID":"ctl00_ContentPlaceHolder1_Label2","id":"ctl00_ContentPlaceHolder1_CollapsiblePanelExtender_pnlExpandFinancialInformation"}, null, null, $get("ctl00_ContentPlaceHolder1_pnlFinancialInformation"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"ctl00_ContentPlaceHolder1_CollapsiblePanelExtender1_pnlTransferedCources_ClientState","CollapseControlID":"ctl00_ContentPlaceHolder1_pnlExpandTransferedCources","CollapsedImage":"../../images/expand_blue.jpg","CollapsedText":"(Show Details...)","ExpandControlID":"ctl00_ContentPlaceHolder1_pnlExpandTransferedCources","ExpandedImage":"../../images/collapse_blue.jpg","ExpandedText":"(Hide Details...)","ImageControlID":"ctl00_ContentPlaceHolder1_ImageButton2","SuppressPostBack":true,"TextLabelID":"ctl00_ContentPlaceHolder1_Label3","id":"ctl00_ContentPlaceHolder1_CollapsiblePanelExtender1_pnlTransferedCources"}, null, null, $get("ctl00_ContentPlaceHolder1_pnlTransferedCources"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"ctl00_ContentPlaceHolder1_CollapsiblePanelExtender1_pnlChallans_ClientState","CollapseControlID":"ctl00_ContentPlaceHolder1_pnlExpandChallans","CollapsedImage":"../../images/expand_blue.jpg","CollapsedText":"(Show Details...)","ExpandControlID":"ctl00_ContentPlaceHolder1_pnlExpandChallans","ExpandedImage":"../../images/collapse_blue.jpg","ExpandedText":"(Hide Details...)","ImageControlID":"ctl00_ContentPlaceHolder1_Image1","SuppressPostBack":true,"TextLabelID":"ctl00_ContentPlaceHolder1_Label1","id":"ctl00_ContentPlaceHolder1_CollapsiblePanelExtender1_pnlChallans"}, null, null, $get("ctl00_ContentPlaceHolder1_pnlChallans"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"ctl00_ContentPlaceHolder1_ctl01_pnlpnlPersonalInformation_CollapsiblePanelExtender_ClientState","CollapseControlID":"ctl00_ContentPlaceHolder1_ctl01_pnlExpandPersonalInformation","Collapsed":true,"CollapsedImage":"../../images/expand_blue.jpg","CollapsedText":"(Show Details...)","ExpandControlID":"ctl00_ContentPlaceHolder1_ctl01_pnlExpandPersonalInformation","ExpandedImage":"../../images/collapse_blue.jpg","ExpandedText":"(Hide Details...)","ImageControlID":"ctl00_ContentPlaceHolder1_ctl01_Image1","SuppressPostBack":true,"TextLabelID":"ctl00_ContentPlaceHolder1_ctl01_Label1","id":"ctl00_ContentPlaceHolder1_ctl01_pnlpnlPersonalInformation_CollapsiblePanelExtender"}, null, null, $get("ctl00_ContentPlaceHolder1_ctl01_pnlPersonalInformation"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"ctl00_ContentPlaceHolder1_ctl02_pnlpnlPersonalInformation_CollapsiblePanelExtender_ClientState","CollapseControlID":"ctl00_ContentPlaceHolder1_ctl02_pnlExpandPersonalInformation","Collapsed":true,"CollapsedImage":"../../images/expand_blue.jpg","CollapsedText":"(Show Details...)","ExpandControlID":"ctl00_ContentPlaceHolder1_ctl02_pnlExpandPersonalInformation","ExpandedImage":"../../images/collapse_blue.jpg","ExpandedText":"(Hide Details...)","ImageControlID":"ctl00_ContentPlaceHolder1_ctl02_Image1","SuppressPostBack":true,"TextLabelID":"ctl00_ContentPlaceHolder1_ctl02_Label1","id":"ctl00_ContentPlaceHolder1_ctl02_pnlpnlPersonalInformation_CollapsiblePanelExtender"}, null, null, $get("ctl00_ContentPlaceHolder1_ctl02_pnlPersonalInformation"));
+});
+//]]>
+</script>
+</form>
+
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-7913003-1");
+            pageTracker._trackPageview();
+        } catch (err) { }</script>
+
+</body>
+</html>
